@@ -42,7 +42,7 @@ app.post("/",function(req,res){
     const options=
     {
         method :"POST",
-        auth : "abc:35a22724869d3f72f4ce2208a42d270e-us21"
+        auth : "abc:8bd3d7c648f96dd25e70ad7fbf027ef9-us21"
 
     }
     
@@ -70,7 +70,7 @@ app.post("/failure",function(req,res){
 
 
 
-app.listen(3000,function(){
+app.listen(process.env.PORT|| 3000,function(){
     console.log("Server is running on port 3000");
 })
 
